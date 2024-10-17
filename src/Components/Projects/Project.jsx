@@ -5,7 +5,7 @@ import { DiJavascript } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 
-export const Project = ({project}) => {
+export const Project = ({project,isEnglish}) => {
   const[isHover, setIsHover] = useState(false)
   const getIcon = (tech) => {
     switch (tech) {
@@ -20,7 +20,9 @@ export const Project = ({project}) => {
     }
   }
   return (
-    <div className='project' onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
+    <div className='project' 
+    onMouseEnter={() => setIsHover(true)}
+    onMouseLeave={() => setIsHover(false)}>
         <img src={project.img} className='image-container' />
         {isHover && <div className='overlay'></div> }
         {project.isWorking ? null:<div className='not-working'>Currently Not Working</div>}
@@ -35,7 +37,7 @@ export const Project = ({project}) => {
             <h1>{project.title}</h1>
             <div>{getIcon(project.tech)}</div>
           </div>
-            <p>{project.description}</p>
+            <p>{isEnglish?project.descriptionEN:project.descriptionDE}</p>
         </div>
 
     </div>

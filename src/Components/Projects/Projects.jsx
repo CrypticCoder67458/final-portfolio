@@ -10,6 +10,7 @@ export const Projects = ({isEnglish}) => {
       </div>
       <div className='projects-container'>
         {projects.map((project)=><Project project={project}
+        isEnglish={isEnglish}
         key={project.number} />)}
       </div>
 

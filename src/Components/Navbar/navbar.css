@@ -1,0 +1,84 @@
+nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #282828;
+    color: white;
+    padding-left: 5%;
+    padding-right: 20px;
+    
+} 
+
+ul{
+    display: flex;
+    list-style: none;
+}
+.nav-links-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    align-items: center;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.nav-links li{
+    margin-right: 15px;
+}
+.lang li{
+    font-size: 14px;
+    margin-right: 8px;
+}
+ li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.lang-container{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    position: relative;
+}
+.lang-container img{
+    width: 32px;
+    height: 32px;
+}
+.lang-container p{
+    font-size: 14px;
+}
+.lang-container p:hover{
+    font-size: 14px;
+}
+
+.lang-menu{
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    background-color: #333333; 
+    font-size: 14px;
+    visibility: hidden;
+    z-index: 100;
+}
+.lang-container:hover .lang-menu {
+    visibility: visible;
+}
+.lang-menu li{
+    padding: 10px 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px
+}
+.lang-menu li:hover{
+    text-decoration: none;    
+}
+.lang-menu li:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #555555;
+}

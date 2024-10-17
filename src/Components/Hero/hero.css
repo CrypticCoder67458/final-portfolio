@@ -1,0 +1,55 @@
+.background-div {  
+    position: relative;  
+    width: 100%;  
+    height: 600px;  
+    background-image: url('../../../public/assets/background.jpg');  
+    background-size: cover;  
+    background-position: center;  
+    overflow: hidden;  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    padding: 0 50px;  
+    color: white;  
+    text-align: center;  
+}  
+
+.background-div::before {  
+    content: "";  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    background-color: rgba(0, 0, 0, 0.5);  
+    z-index: 1;  
+}  
+
+.background-div h2, .background-div h1, .background-div p {  
+    position: relative;  
+    z-index: 2;  
+    color: white;  
+    margin: 10px 0; 
+}
+
+
+.background-div h2 {  
+    font-size: 24px;  
+    font-weight: 400;  
+    letter-spacing: 1px;  
+}  
+
+.background-div h1 {  
+    font-size: 48px;  
+    font-weight: 700;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}  
+
+.background-div p {  
+    font-size: 18px;  
+    font-weight: 300;  
+    max-width: 600px; 
+    line-height: 1.5; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+}

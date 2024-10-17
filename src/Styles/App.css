@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.app{
+    overflow-x: hidden;
+    color: white;
+    background: #1f1e1e;
+    
+    }
+button{
+    background-color: #348bdd;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    color: white; 
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+#root{
+    margin: 0;
+}
+.dark-white-effect{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    transform-origin: center center;
+}
+.dark-white-effect:hover{
+    filter: none;
+    /*transform: scale(1.1);*/
+}
+
+.zoom-effect{
+    transition: filter 0.3s ease, transform 0.3s ease;
+    transform-origin: center center;
+    appearance: none;
+    background-color: transparent;
+    
+  
+}
+.zoom-effect:hover{
+    transform: scale(1.1);
+    filter: none;
+}

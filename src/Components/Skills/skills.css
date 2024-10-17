@@ -1,0 +1,43 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.skills h1{
+    margin-bottom: 20px;
+}
+.skills-container {
+  width: 80%;
+  display: grid;
+  align-items: center;
+  place-items: center;  
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 30px;
+  box-shadow: 0.1px 0.3px 5px 3px rgb(65, 64, 64); 
+  padding: 30px;
+  border-radius: 30px;
+}
+.logo:hover {
+    transform: scale(1.2);
+    outline: 0.1px solid #348bdd;
+    outline-offset: 10px;
+}
+
+
+/*.logo{
+    width: 60px;
+}
+.css,.github{
+    width: 75px;
+}
+
+.java{
+    width: 80px;
+}
+.logo:hover{
+    filter: none;
+}*/

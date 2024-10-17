@@ -135,20 +135,7 @@
     max-width: 600px;
 }
 
-    /* Your CSS styles for smaller screens here 
-    
 
-    .about-me-profile-img {
-        width: 200px;
-        height: 300px;
-    }
-
-    .about-me-text {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }*/
 }
 
 
@@ -182,8 +169,8 @@
     justify-content: center;  
     align-items: center;  
     gap: 15px;  
-    line-height: 1.6; /* Improves line spacing for readability */  
-    padding: 30px; /* Adds padding around the text */  
+    line-height: 1.6;  
+    padding: 30px; 
 
 }
 .hero-text h2{
@@ -211,12 +198,4 @@
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-}
-/*.cv-btn:hover,.contact-btn{
-    background: rgb(0, 0, 0);
-    color: white;
-}
-.contact-btn:hover{
-    color: black;
-    background-color: white;
 }
